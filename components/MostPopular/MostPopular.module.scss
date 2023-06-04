@@ -1,0 +1,110 @@
+.slider {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 0 60px 260px 60px;
+  box-sizing: border-box;
+  height: 100vh;
+
+  .slider__item_first {
+    position: relative;
+    transition: 1s !important;
+    height: 100%;
+    width: 50%;
+    .sliderImage__title {
+      position: absolute;
+      bottom: 25px;
+      left: 20px;
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 60px;
+      width: 67%;
+      color: #ffffff;
+      transition: 1s !important;
+    }
+
+    .sliderImage_text {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 60px;
+      color: #ffffff;
+      transition: 1s !important;
+
+      .sliderImage_price {
+        font-family: "Stolzl";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        color: #ffffff;
+        transition: 1s !important;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: 1s !important;
+    }
+  }
+
+  .slider__item_second {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 49%;
+
+    .slider__title {
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 70px;
+      line-height: 90px;
+      color: #ffffff;
+    }
+
+    .slider___search {
+      max-width: 700px;
+      width: 100%;
+      height: 70px;
+      background: linear-gradient(
+        90.75deg,
+        #1c1c1c 0.65%,
+        rgba(27, 27, 27, 0.4) 107.06%
+      );
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 90px;
+      color: #ffffff;
+      padding: 0 0 0 30px;
+    }
+
+    .slider_button {
+      max-width: 215px;
+      width: 100%;
+      height: 57px;
+      background: #33b7bc;
+      border: none;
+      border-radius: 10px;
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      color: #ffffff;
+      margin: auto;
+      cursor: pointer;
+    }
+  }
+}

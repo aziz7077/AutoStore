@@ -1,0 +1,74 @@
+﻿.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: "Stolzl";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 130px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  .cars_catalog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 121px;
+    padding-bottom: 260px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .advantages {
+    h1 {
+      font-size: 60px;
+    }
+    .cars_catalog {
+      gap: 0;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .advantages {
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .advantages {
+    h1 {
+      font-size: 50px;
+    }
+    .cars_catalog {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .advantages {
+    .cars_catalog {
+      padding-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 381px) {
+  .advantages {
+    h1 {
+      font-size: 35px;
+    }
+  }
+}

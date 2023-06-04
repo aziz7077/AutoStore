@@ -1,0 +1,89 @@
+.MyInput {
+  width: 700px;
+  height: 90px;
+  color: white;
+  background: linear-gradient(
+    90.75deg,
+    #1c1c1c 0.65%,
+    rgba(27, 27, 27, 0.4) 107.06%
+  );
+  border-radius: 10px;
+  border: 0.5px solid gray;
+  text-align: start;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 90px;
+  margin-bottom: 30px;
+}
+
+.MyInput:hover {
+  transition: 0.8s;
+  border-color: #33b7bc;
+}
+
+@media screen and (max-width: 1440px) {
+  .MyInput {
+    width: 600px;
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .MyInput {
+    width: 500px;
+    height: 80px;
+    padding-left: 26px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .MyInput {
+    width: 360px;
+    height: 90px;
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 60px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .MyInput {
+    width: 320px;
+    height: 60px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .MyInput {
+    width: 380px;
+    height: 62px;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-width:375px) {
+    .MyInput{
+    width: 320px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .MyInput{
+        width: 310px;
+    }
+}

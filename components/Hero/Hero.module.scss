@@ -1,0 +1,130 @@
+.hero {
+  height: 100vh;
+  margin: 0 auto 180px auto;
+  .hero__background {
+    height: 100%;
+    background: url(../../public/background.png) no-repeat center;
+    background-size: cover;
+    .hero__gradient {
+      height: 100%;
+      position: relative;
+      background: linear-gradient(
+        180deg,
+        rgba(22, 21, 22, 0.9) -7.87%,
+        rgba(22, 21, 22, 0.6) 100%
+      );
+      .hero__title {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Stolzl", sans-serif;
+        font-style: normal;
+        color: #ffffff;
+        line-height: 90px;
+        h1 {
+          font-weight: 500;
+          font-size: 120px;
+        }
+        p {
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 32px;
+        }
+      }
+      // hero__title
+
+      .hero__social {
+        position: absolute;
+        right: 60px;
+        bottom: 60px;
+      }
+      // hero__social
+    }
+    // hero__gradient
+  }
+  // hero__background
+}
+// hero
+
+@media screen and (max-width: 1440px) {
+  .hero {
+    .hero__background {
+      .hero__gradient {
+        .hero__title {
+          line-height: 80px;
+          h1 {
+            font-size: 100px;
+          }
+          p {
+            font-size: 26px;
+          }
+        }
+        // hero__title
+        .hero__social {
+          right: 40px;
+          bottom: 40px;
+        }
+        // hero__social
+      }
+      // hero__gradient
+    }
+    // hero__background
+  }
+  // hero
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    .hero__background {
+      .hero__gradient {
+        .hero__title {
+          line-height: 60px;
+          h1 {
+            font-size: 80px;
+          }
+          p {
+            font-size: 22px;
+          }
+        }
+        // hero__title
+        .hero_social_network {
+          right: 40px;
+          bottom: 40px;
+        }
+        // hero_social_network
+      }
+      // hero__gradient
+    }
+    // hero__background
+  }
+  // hero
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    .hero__background {
+      .hero__gradient {
+        .hero__title {
+          line-height: 50px;
+          h1 {
+            font-size: 60px;
+          }
+          p {
+            font-size: 17px;
+          }
+        }
+        // hero__title
+        .hero_social_network {
+          right: 20px;
+          bottom: 20px;
+        }
+        // hero_social_network
+      }
+      // hero__gradient
+    }
+    // hero__background
+  }
+  // hero
+}

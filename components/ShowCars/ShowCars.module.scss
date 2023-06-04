@@ -1,0 +1,166 @@
+.showcars_section {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #161516;;
+  .cars_filter {
+    position: relative;
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    white-space: nowrap;
+    .cars_filter_title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      transition: 0.4s;
+      cursor: pointer;
+
+      color: #414141;
+    }
+    .cars_filter_title_active {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      transition: 0.4s;
+
+      cursor: pointer;
+      color: #f2f2f2;
+      position: relative;
+      z-index: 1;
+    }
+    .cars_filter_title_active::after {
+      content: "";
+      position: absolute;
+      transition: 0.4s;
+      z-index: -1;
+      top: 61%;
+      width: 100%;
+      height: 9px;
+      background: #33b7bc;
+    }
+    .cars_filter_title_active::after {
+      bottom: 0;
+      right: 0;
+      -webkit-transform: skew(-55deg);
+      -moz-transform: skew(-55deg);
+      -o-transform: skew(-55deg);
+    }
+  }
+  .cars_catalog {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .cars_catalog_btn {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    button {
+      width: 100%;
+      height: 72px;
+      background: #33b7bc;
+
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+
+      color: #ffffff;
+
+      text-transform: uppercase;
+    }
+    button:hover{
+      box-shadow: 0px 0px 20px #245C5F;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 980px) {
+  .cars_filter {
+    padding: 0 2% 0 2%;
+    overflow-x: scroll;
+  }
+  .cars_catalog {
+    gap: 7px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cars_filter {
+    p {
+      font-size: 36px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cars_filter {
+    gap: 5%;
+    p {
+      font-size: 33px !important;
+    }
+  }
+  .cars_catalog {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 729px) {
+  .cars_filter {
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .cars_filter {
+    p {
+      font-size: 25px !important;
+    }
+  }
+}
+
+@media screen  and (max-width: 426px){
+  .cars_catalog{
+    padding: 0 2% 0 2%;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .showcars_section{
+    padding-top: 25px;
+  }
+  .cars_filter {
+    padding: 0 4% 0 4%;
+    p {
+      font-size: 19px !important;
+    }
+    .cars_filter_title_active::after {
+      height: 6px !important;
+    }
+  }
+  .cars_catalog {
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
+    gap: 13px !important;
+  }
+  .cars_catalog_btn{
+    max-width: 300px !important;
+    padding: 0 20px 0 20px;
+    button{
+      height: 50px !important;
+      font-size: 14px !important;
+    }
+  }
+}

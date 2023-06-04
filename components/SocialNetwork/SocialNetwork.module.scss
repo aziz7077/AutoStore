@@ -1,0 +1,124 @@
+.social {
+  display: flex;
+  gap: 20px;
+  .social_telegram {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #34aadf;
+    border-radius: 50%;
+    cursor: pointer;
+    svg {
+      height: 28px;
+    }
+  }
+
+  .social_whatsapp {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #43d854;
+    border-radius: 50%;
+    cursor: pointer;
+    svg {
+      height: 26px;
+    }
+  }
+}
+// social
+
+@media screen and (max-width: 1440px) {
+  .social {
+    gap: 18px;
+
+    .social_telegram {
+      width: 50px;
+      height: 50px;
+      svg {
+        height: 24px;
+      }
+    }
+
+    .social_whatsapp {
+      width: 50px;
+      height: 50px;
+      svg {
+        height: 22px;
+      }
+    }
+  }
+  // social
+}
+
+@media screen and (max-width: 1024px) {
+  // hero_title
+  .social {
+    gap: 16px;
+
+    .social_telegram {
+      width: 46px;
+      height: 46px;
+      svg {
+        height: 20px;
+      }
+    }
+
+    .social_whatsapp {
+      width: 46px;
+      height: 46px;
+      svg {
+        height: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social {
+    gap: 14px;
+
+    .social_telegram {
+      width: 42px;
+      height: 42px;
+      svg {
+        height: 16px;
+      }
+    }
+
+    .social_whatsapp {
+      width: 42px;
+      height: 42px;
+      svg {
+        height: 14px;
+      }
+    }
+  }
+  // social
+}
+
+@media screen and (max-width: 425px) {
+  .social {
+    gap: 12px;
+
+    .social_telegram {
+      width: 38px;
+      height: 38px;
+      svg {
+        height: 16px;
+      }
+    }
+
+    .social_whatsapp {
+      width: 38px;
+      height: 38px;
+      svg {
+        height: 14px;
+      }
+    }
+  }
+  // social
+}

@@ -1,0 +1,178 @@
+.my-slider {
+  width: 600px;
+  height: 50vh;
+}
+
+/* -------------------------------------------------------------------- */
+/* Active slide */
+.my-slider .swiper-slide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s !important;
+  transform: translate(34px) !important;
+}
+
+.my-slider .swiper-slide-active {
+  transform: translate(-74px) !important;
+  transition: 0.5s !important;
+}
+
+.my-slider .swiper-slide-active::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 210px;
+  display: block;
+  width: 260px;
+  height: 70.5px;
+  border-left: 4px solid #2C2C2C;
+  border-bottom: 3px solid #2C2C2C;
+  -webkit-transform: skew(40deg);
+  -moz-transform: skew(40deg);
+  -o-transform: skew(40deg);
+}
+
+.my-slider .swiper-slide-active h1 {
+  font-size: 30px !important;
+  color: #33b7bc !important;
+  opacity: 1 !important;
+}
+
+.my-slider .swiper-slide-active p {
+  font-size: 18px !important;
+  color: #049393 !important;
+}
+
+/* ==================================================================== */
+/* Prev, next slide */
+.my-slider .swiper-slide-prev,
+.my-slider .swiper-slide-next {
+  transform: translateX(-64px) !important;
+}
+
+.my-slider .swiper-slide-prev h1,
+.my-slider .swiper-slide-next h1 {
+  font-size: 24px !important;
+  color: #ffffff !important;
+  opacity: 0.8 !important;
+}
+
+/* ==================================================================== */
+/* General slide */
+.my-slider .swiper-slide .my-slide__item {
+  transform: translateX(164px);
+}
+
+.my-slider .swiper-slide h1 {
+  font-family: "Stolzl", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.my-slider .swiper-slide p {
+  font-family: "Stolzl", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  color: #646464;
+}
+
+/* -------------------------------------------------------------------- */
+/* Top arrow */
+.my-slider .swiper-button-prev {
+  width: 46px;
+  height: 46px;
+  top: 25px;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    90.75deg,
+    #1c1c1c 0.65%,
+    rgba(27, 27, 27, 0.4) 107.06%
+  );
+}
+
+.my-slider .swiper-button-prev::after {
+  content: "";
+  width: 42px;
+  height: 42px;
+  background: #161516;
+  border-radius: 50%;
+}
+
+.my-slider .swiper-button-prev::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../public/topArrow.png) no-repeat center;
+}
+
+/* ==================================================================== */
+
+/* Bottom arrow */
+.my-slider .swiper-button-next {
+  width: 46px;
+  height: 46px;
+  left: 0;
+  top: 48vh;
+  border-radius: 50%;
+  background: linear-gradient(
+    90.75deg,
+    #1c1c1c 0.65%,
+    rgba(27, 27, 27, 0.4) 107.06%
+  );
+}
+
+.my-slider .swiper-button-next::after {
+  content: "";
+  width: 42px;
+  height: 42px;
+  background: #161516;
+  border-radius: 50%;
+}
+
+.my-slider .swiper-button-next::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url(../public/bottomArrow.png) no-repeat center;
+}
+
+/* -------------------------------------------------------------------- */
+/* Scrollbar */
+.my-slider .swiper-scrollbar {
+  left: 21.005px !important;
+  z-index: -1 !important;
+  background: #2c2c2c;
+  border-radius: 20px;
+  display: block !important;
+}
+
+.my-slider .swiper-scrollbar-drag {
+  height: 20px !important;
+  width: 20px !important;
+  position: relative;
+  top: 47%; /* */
+  transform: translate(0, -50%) !important; /* */
+  background-color: none !important;
+}
+
+.my-slider .swiper-scrollbar-drag::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #ffffff;
+  border: 4px solid #33b7bc;
+  border-radius: 50%;
+  transform: translate(-90%, -30%);
+}

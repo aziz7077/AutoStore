@@ -1,0 +1,155 @@
+﻿.car_card {
+  position: relative;
+  width: 33%;
+  height: 459px;
+  display: flex;
+  align-items: flex-end;
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.08;
+    transition: 0.5s;
+  }
+  img:hover {
+    opacity: 1;
+  }
+  .car_card_footer {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 60px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    z-index: 2;
+    h3 {
+      font-family: "Stolzl";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 40px;
+      display: flex;
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 1522px) {
+  .car_card {
+    height: 500px;
+    .car_card_footer {
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+@media screen and (max-width: 1241px) {
+  .car_card {
+    width: 95%;
+
+    img {
+      width: 105%;
+    }
+    .car_card_footer {
+      padding: 0 30px 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .car_card {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+    .car_card_footer {
+      padding: 0 30px 0 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .car_card_footer {
+    h3 {
+      font-size: 20px !important;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .car_card_footer {
+    h3 {
+      font-size: 17px !important;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .car_card_footer {
+    h3 {
+      font-size: 120% !important;
+      white-space: nowrap;
+    }
+    
+  }
+}
+@media screen and (max-width: 1116px) {
+  .car_card_footer {
+    padding: 0 5px 0;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media screen and (max-width: 951px) {
+  .car_card {
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .car_card_footer {
+    h3 {
+      font-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .car_card {
+    height: 290px;
+  }
+  .car_card_footer {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .car_card_footer {
+    margin-bottom: 2px !important;
+    h3 {
+      font-size: 18px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .car_card_footer {
+    padding: 0 2px 0 2px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .car_card {
+    img {
+    }
+    .car_card_footer {
+      h3 {
+        font-size: 13px !important;
+      }
+    }
+  }
+}

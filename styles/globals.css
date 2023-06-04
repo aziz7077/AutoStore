@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+@font-face {
+  font-family: "Stolzl";
+  src: local("Stolzl Regular"), local("Stolzl-Regular"),
+    url("../font/Stolzl-Regular.woff2") format("woff2"),
+    url("../font/Stolzl-Regular.woff") format("woff"),
+    url("../font/Stolzl-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 , h2 , h3 ,h4 , h5 ,h6 , a , p , span , li , ul , input{
+  font-family: "Stolzl";
+}
+
+body {
+  background: #161516;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.modalStyle .ant-modal-content{
+  background-color: #161516;
+  /* border: 2px solid #33b7bc; */
+}
+
+.modalStyle .anticon{
+  color: #33b7bc;
+}

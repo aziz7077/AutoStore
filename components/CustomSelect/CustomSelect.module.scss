@@ -1,0 +1,184 @@
+.mySelect {
+  position: relative;
+  color: #ffffff;
+
+  .select__placeholder {
+    user-select: none;
+    cursor: pointer;
+    font-family: "Stolzl", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+
+    &::after {
+      content: "\f078";
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateY(-50%);
+      font-family: "FontAwesome";
+      margin-left: 30px;
+      margin-top: 15px;
+    }
+  }
+  // select__placeholder
+
+  .select__list {
+    width: 188px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    background: rgba(32, 32, 32, 0.4);
+    border: 1px solid #313131;
+    border-radius: 14px;
+    user-select: none;
+    list-style: none;
+    color: #fff;
+    padding: 0 25px;
+    .select__item {
+      border-bottom: 1px solid #323232;
+      font-family: "Stolzl", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 15px 0;
+      &:hover {
+        transition: 0.2s;
+        color: #33b7bc !important;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+    // select__item
+  }
+  // select__list
+}
+// mySelect
+
+.show {
+  .select__placeholder::after {
+    content: "\f077";
+    color: #33b7bc;
+  }
+
+  .select__list {
+    display: block;
+  }
+}
+// open
+
+@media screen and (max-width: 1440px) {
+  .mySelect {
+    .select__placeholder {
+      font-size: 14px;
+
+      &::after {
+        margin-left: 30px;
+        margin-top: 15px;
+      }
+    }
+    // select__placeholder
+
+    .select__list {
+      width: 170px;
+      top: 35px;
+      right: 40px;
+      padding: 0 25px;
+      .select__item {
+        font-size: 13px;
+        padding: 14px 0;
+      }
+      // select__item
+    }
+    // select__list
+  }
+  // mySelect
+}
+
+@media screen and (max-width: 1024px) {
+  .mySelect {
+    .select__placeholder {
+      font-size: 13px;
+
+      &::after {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+    // select__placeholder
+
+    .select__list {
+      width: 150px;
+      top: 35px;
+      right: 40px;
+      padding: 0 20px;
+      .select__item {
+        font-size: 12px;
+        padding: 13px 0;
+      }
+      // select__item
+    }
+    // select__list
+  }
+  // mySelect
+}
+
+@media screen and (max-width: 768px) {
+  .mySelect {
+    .select__placeholder {
+      font-size: 12px;
+
+      &::after {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    }
+    // select__placeholder
+
+    .select__list {
+      width: 130px;
+      top: 30px;
+      right: 0;
+      padding: 0 20px;
+      .select__item {
+        font-size: 11px;
+        padding: 12px 0;
+      }
+      // select__item
+    }
+    // select__list
+  }
+  // mySelect
+
+  .mySelect:nth-child(2) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mySelect {
+    .select__placeholder {
+      font-size: 11px;
+
+      &::after {
+        margin-left: 10px;
+        margin-top: 9px;
+      }
+    }
+    // select__placeholder
+
+    .select__list {
+      width: 110px;
+      padding: 0 15px;
+      .select__item {
+        font-size: 10px;
+        padding: 11px 0;
+      }
+      // select__item
+    }
+    // select__list
+  }
+  // mySelect
+}
